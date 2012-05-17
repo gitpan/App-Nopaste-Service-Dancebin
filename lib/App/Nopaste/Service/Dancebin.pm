@@ -2,7 +2,7 @@ use strict;
 use warnings;
 package App::Nopaste::Service::Dancebin;
 {
-  $App::Nopaste::Service::Dancebin::VERSION = '0.002';
+  $App::Nopaste::Service::Dancebin::VERSION = '0.003';
 }
 use Encode qw( decode_utf8 );
 
@@ -19,7 +19,7 @@ sub fill_form {
     my $content = {
         code    => decode_utf8($args{text}),
         title   => decode_utf8($args{desc}),
-        #lang    => $args{lang},
+        lang    => decode_utf8($args{lang}),
     };
     my $exp = $ENV{DANCEBIN_EXP};
     $content->{expiration} = $exp if $exp;
@@ -60,7 +60,7 @@ App::Nopaste::Service::Dancebin - nopaste service for L<Dancebin>
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
