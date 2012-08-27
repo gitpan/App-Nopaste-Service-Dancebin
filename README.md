@@ -4,7 +4,7 @@ App::Nopaste::Service::Dancebin - nopaste service for [Dancebin](http://search.c
 
 # VERSION
 
-version 0.003
+version 0.004
 
 # SYNOPSIS
 
@@ -16,6 +16,12 @@ To use, simple use:
 
 By default it pastes to [http://danceb.in/](http://danceb.in/), but you can
 override this be setting the `DANCEBIN_URL` environment variable.
+
+You can set HTTP Basic Auth credentials to use for the nopaste service
+if necessary by using:
+
+    DANCEBIN_USER=username
+    DANCEBIN_PASS=password
 
 The expiration of the post can be modified by setting the `DANCEBIN_EXP`
 environment variable.  Acceptable values are things like:

@@ -25,4 +25,4 @@ resources:
   bugtracker: https://github.com/throughnothing/App-Nopaste-Service-Dancebin/issues
   homepage: http://metacpan.org/release/App-Nopaste-Service-Dancebin/
   repository: git://github.com/throughnothing/App-Nopaste-Service-Dancebin.git
-version: 0.003
+version: 0.004
